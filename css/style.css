@@ -171,11 +171,11 @@ Sidebar
     justify-content: center;
     align-items: center;
     gap: 4px;
-    padding-left: 4px;
+    margin-bottom: 14px;
 }
 
 .account__download img {
-    width: 12px;
+    width: 14px;
 }
 
 .account__download span {
@@ -228,6 +228,62 @@ Player
     background-color: var(--player);
     width: 100%;
     height: 90px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.player__info {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.player__control {
+    width: 40%;
+    background-color: green;
+}
+
+.player__functions {
+    width: 30%;
+    background-color: blue;
+}
+
+.player__info__song {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player__info__song__cover {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.player__info__song__cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.player__info__song h5 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.player__info__song h6 {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text--alt);
+}
+
+.player__info__tag {
+    margin-left: 10%;
+}
+
+.player__info__tag i {
+    color: var(--grey-icon);
+    margin-left: 8px;
 }
 
 /*
@@ -299,6 +355,8 @@ Responsive
 
     .account__download {
         justify-content: left;
+        padding-left: 4px;
+        margin-bottom: 0;
     }
 
     .account hr {
