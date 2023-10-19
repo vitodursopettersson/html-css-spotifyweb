@@ -1,0 +1,241 @@
+/*
+*************
+Reset Default
+*************
+*/
+
+@import url(reset.css);
+
+/*
+**************
+Design System
+**************
+*/
+
+/* Color */
+:root {
+    --side-bar: #000000;
+    --player: #282828;
+    --bg: #141921;
+    --text: #ffffff;
+    --text--alt: #7D7F84;
+    --active-color: #C1EA83;
+    --grey-icon: #808080;
+}
+
+/* Common */
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*
+--------------
+Sidebar
+--------------
+*/
+
+/* Container */
+
+#sidebar {
+    background-color: var(--side-bar);
+    width: 50px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Logo */
+
+.brand {}
+
+.logo--small {}
+
+.logo {
+    display: none;
+}
+
+/* Menu */
+
+.menu {}
+
+.menu__item {
+    padding: 6px 0;
+}
+
+.menu__item:hover {
+    background-color: #282828;
+}
+
+#home {}
+
+#search {}
+
+#library {}
+
+.menu__item img {
+    width: 22px;
+}
+
+.menu__item span {
+    display: none;
+}
+
+/* Playlist */
+
+.playlist {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    display: none;
+}
+
+.playlist--new {}
+
+.playlist--new img {
+    width: 22px;
+}
+
+.playlist--new span {}
+
+.playlist--list {
+    overflow-y: auto;
+}
+
+/* Account */
+
+.account {
+    margin-top: auto;
+}
+
+.account span {
+    display: none;
+}
+
+.account__download {}
+
+.account__download img {
+    width: 12px;
+}
+
+.account__download span {}
+
+.account hr {
+    border-color: var(--grey-icon);
+    display: none;
+}
+
+.account__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account__profile__photo {
+    background-color: var(--grey-icon);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.account__profile__photo img {}
+
+.account__profile span {}
+
+/*
+--------------
+Player
+--------------
+*/
+
+.player {
+    background-color: var(--player);
+    width: 100%;
+    height: 90px;
+}
+
+/*
+--------------
+Main
+--------------
+*/
+
+
+/*
+**************
+Responsive
+**************
+*/
+
+/* Small */
+@media screen and (min-width: 576px) {
+
+    /* Sidebar */
+
+    #sidebar {
+        width: 230px;
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    /* Brand */
+
+    .logo--small {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    /* Menu */
+
+    .menu__item {
+        border-left: 3px solid var(--side-bar);
+    }
+
+    .menu__item.active {
+        border-left: 3px solid var(--active-color);
+    }
+
+    .menu__item span {
+        display: inline-block;
+    }
+
+    /* Playlist */
+
+    .playlist {
+        display: flex;
+    }
+
+    /* Account */
+
+    .account__profile {
+        justify-content: left;
+    }
+
+    .account hr {
+        display: block;
+    }
+
+    .account span {
+        display: inline;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {}
+
+/* Large */
+@media screen and (min-width: 992px) {}
+
+/* Extra Large */
+@media screen and (min-width: 1200px) {}
