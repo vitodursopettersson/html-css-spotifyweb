@@ -12,6 +12,24 @@ Design System
 **************
 */
 
+/* Tipography */
+
+h1 {}
+
+h2 {}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
 /* Color */
 :root {
     --side-bar: #000000;
@@ -42,34 +60,43 @@ Sidebar
 
 #sidebar {
     background-color: var(--side-bar);
+    color: var(--text--alt);
     width: 50px;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     text-align: center;
+    padding: 5px 0 10px;
 }
 
 /* Logo */
 
 .brand {}
 
-.logo--small {}
+.logo--small {
+    width: 28px;
+    margin-bottom: 4px;
+}
 
 .logo {
+    width: 132px;
+    margin-bottom: 24px;
     display: none;
 }
 
 /* Menu */
 
-.menu {}
+.menu {
+    margin-bottom: 22px;
+}
 
 .menu__item {
     padding: 6px 0;
-}
-
-.menu__item:hover {
-    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 #home {}
@@ -83,6 +110,8 @@ Sidebar
 }
 
 .menu__item span {
+    font-size: 12px;
+    font-weight: 600;
     display: none;
 }
 
@@ -96,16 +125,35 @@ Sidebar
     display: none;
 }
 
-.playlist--new {}
-
-.playlist--new img {
-    width: 22px;
+.playlist h3 {
+    margin-bottom: 15px;
 }
 
-.playlist--new span {}
+.playlist--new {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.playlist--new i {
+    font-size: 20px;
+    color: var(--grey-icon);
+}
+
+.playlist--new span {
+    font-size: 16px;
+    font-weight: 400;
+}
 
 .playlist--list {
     overflow-y: auto;
+}
+
+.playlist--list li {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 /* Account */
@@ -118,16 +166,25 @@ Sidebar
     display: none;
 }
 
-.account__download {}
+.account__download {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-left: 4px;
+}
 
 .account__download img {
     width: 12px;
 }
 
-.account__download span {}
+.account__download span {
+    font-size: 12px;
+    font-weight: 400;
+}
 
 .account hr {
-    border-color: var(--grey-icon);
+    border: 0.1px solid var(--grey-icon);
+    margin: 8px 0;
     display: none;
 }
 
@@ -135,6 +192,7 @@ Sidebar
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .account__profile__photo {
@@ -144,11 +202,20 @@ Sidebar
     border-radius: 50%;
     overflow: hidden;
     padding: 3px;
+
 }
 
-.account__profile__photo img {}
+.account__profile__photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
-.account__profile span {}
+.account__profile span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
 
 /*
 --------------
@@ -183,7 +250,7 @@ Responsive
     #sidebar {
         width: 230px;
         text-align: left;
-        padding: 0 20px;
+        padding: 20px 20px 10px;
     }
 
     /* Brand */
@@ -203,12 +270,14 @@ Responsive
     }
 
     .menu__item {
+        justify-content: left;
         padding-left: 18px;
         border-left: 3px solid var(--side-bar);
     }
 
     .menu__item.active {
         border-left: 3px solid var(--active-color);
+        color: var(--text);
     }
 
     .menu__item span {
