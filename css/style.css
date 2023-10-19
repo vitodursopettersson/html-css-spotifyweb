@@ -242,12 +242,10 @@ Player
 
 .player__control {
     width: 40%;
-    background-color: green;
 }
 
 .player__functions {
     width: 30%;
-    background-color: blue;
 }
 
 /* Player Info */
@@ -334,11 +332,15 @@ Player
 }
 
 .time--full {
-    animation: time 10s linear;
     width: 0%;
     height: 4px;
     border-radius: 4px;
     background-color: var(--text);
+    position: relative;
+}
+
+.time--full.animation {
+    animation: time 275s linear;
 }
 
 @keyframes time {
@@ -349,6 +351,35 @@ Player
     100% {
         width: 50%;
     }
+}
+
+.time--control {
+    width: 10px;
+    height: 10px;
+    background-color: var(--active-color);
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+}
+
+/* Controlli Volume */
+
+.player__functions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.player__functions__icon i {
+    margin-right: 6px;
+}
+
+.player__functions .timeline {
+    max-width: 118px;
+}
+
+.player__functions .timeline .time--full {
+    width: 20%;
 }
 
 /*
