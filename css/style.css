@@ -168,6 +168,7 @@ Sidebar
 
 .account__download {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 4px;
     padding-left: 4px;
@@ -293,6 +294,10 @@ Responsive
     /* Account */
 
     .account__profile {
+        justify-content: left;
+    }
+
+    .account__download {
         justify-content: left;
     }
 
