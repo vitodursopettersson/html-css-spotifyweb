@@ -224,6 +224,8 @@ Player
 --------------
 */
 
+/* Container */
+
 .player {
     background-color: var(--player);
     width: 100%;
@@ -247,6 +249,8 @@ Player
     width: 30%;
     background-color: blue;
 }
+
+/* Player Info */
 
 .player__info__song {
     display: flex;
@@ -284,6 +288,67 @@ Player
 .player__info__tag i {
     color: var(--grey-icon);
     margin-left: 8px;
+}
+
+/* Player Timeline */
+
+.player__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.player__control__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.player__control__icon i.big {
+    font-size: 30px;
+    margin: 0 6px;
+}
+
+.player__control__timeline {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.player__control__timeline span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.timeline {
+    flex-grow: 1;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--grey-icon);
+}
+
+.time--full {
+    animation: time 10s linear;
+    width: 0%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--text);
+}
+
+@keyframes time {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
 }
 
 /*
