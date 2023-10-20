@@ -41,6 +41,15 @@ h6 {}
     --grey-icon: #808080;
 }
 
+/* Button */
+
+button {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 13px 10px;
+    border: 1px solid var(--text);
+}
+
 /* Common */
 
 body {
@@ -232,6 +241,8 @@ Player
     height: 90px;
     display: flex;
     padding: 0 10px;
+    position: absolute;
+    bottom: 0;
 }
 
 .player__info {
@@ -353,7 +364,7 @@ Player
     }
 }
 
-.time--control {
+.timeline:hover .time--control {
     width: 10px;
     height: 10px;
     background-color: var(--active-color);
@@ -387,6 +398,19 @@ Player
 Main
 --------------
 */
+
+body {
+    display: flex;
+}
+
+.main {}
+
+/* Upgrade */
+
+.upgrade {
+    height: 90px;
+    background-color: rgba(0 0 0 0.5);
+}
 
 
 /*
