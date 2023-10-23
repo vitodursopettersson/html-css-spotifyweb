@@ -25,95 +25,355 @@
 
 <body>
 
-    <!-- Sidebar -->
-    <div id="sidebar">
+    <!-- Top Container -->
+    <div class="top-container">
+        <!-- Sidebar -->
+        <div id="sidebar">
 
-        <!-- Brand -->
-        <div class="brand">
-            <img class="logo--small" src="img/logo-small.svg" alt="logo spotify small">
-            <img class="logo" src="img/logo.svg" alt="logo spotify">
-        </div>
-
-        <!-- Menu -->
-        <div class="menu">
-
-            <!-- Home -->
-            <div id="home" class="menu__item active">
-                <img src="img/home.svg" alt="icona home">
-                <span>Home</span>
+            <!-- Brand -->
+            <div class="brand">
+                <img class="logo--small" src="img/logo-small.svg" alt="logo spotify small">
+                <img class="logo" src="img/logo.svg" alt="logo spotify">
             </div>
 
-            <!-- Search -->
-            <div id="search" class="menu__item">
-                <img src="img/search.svg" alt="icona search">
-                <span>Cerca</span>
-            </div>
+            <!-- Menu -->
+            <div class="menu">
 
-            <!-- Library -->
-            <div id="library" class="menu__item">
-                <img src="img/libreria.svg" alt="icona library">
-                <span>La tua libreria</span>
-            </div>
-
-        </div>
-
-        <!-- Playlist -->
-        <div class="playlist">
-
-            <!-- Titolo -->
-            <h3>PLAYLIST</h3>
-
-
-            <!-- New Playlist -->
-            <div class="playlist--new">
-                <i class="fa-solid fa-square-plus"></i>
-                <span>Crea Playlist</span>
-            </div>
-
-            <!-- Lista Playlist -->
-            <div class="playlist--list">
-                <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Sidebar Bottom -->
-        <div class="account">
-
-            <!-- Download App -->
-            <div class="account__download">
-                <img src="img/download.svg" alt="download icon">
-                <span>Installa app</span>
-            </div>
-
-            <hr>
-
-            <!-- User Profile -->
-            <div class="account__profile">
-                <div class="account__profile__photo">
-                    <img src="img/profile.svg" alt="profile photo">
+                <!-- Home -->
+                <div id="home" class="menu__item active">
+                    <img src="img/home.svg" alt="icona home">
+                    <span>Home</span>
                 </div>
-                <span>John Doe</span>
+
+                <!-- Search -->
+                <div id="search" class="menu__item">
+                    <img src="img/search.svg" alt="icona search">
+                    <span>Cerca</span>
+                </div>
+
+                <!-- Library -->
+                <div id="library" class="menu__item">
+                    <img src="img/libreria.svg" alt="icona library">
+                    <span>La tua libreria</span>
+                </div>
+
             </div>
 
+            <!-- Playlist -->
+            <div class="playlist">
+
+                <!-- Titolo -->
+                <h4>Playlist</h4>
+
+
+                <!-- New Playlist -->
+                <div class="playlist--new">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Crea Playlist</span>
+                </div>
+
+                <!-- Lista Playlist -->
+                <div class="playlist--list">
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar Bottom -->
+            <div class="account">
+
+                <!-- Download App -->
+                <div class="account__download">
+                    <img src="img/download.svg" alt="download icon">
+                    <span>Installa app</span>
+                </div>
+
+                <hr>
+
+                <!-- User Profile -->
+                <div class="account__profile">
+                    <div class="account__profile__photo">
+                        <img src="img/profile.svg" alt="profile photo">
+                    </div>
+                    <span>John Doe</span>
+                </div>
+
+            </div>
         </div>
+
+        <!-- Main -->
+        <main>
+
+            <!-- Top Header -->
+            <div class="top-header">
+                <button>Effettua l'upgrade</button>
+            </div>
+
+            <!-- Menu Categorie -->
+            <nav class="category">
+                <ul>
+                    <li>
+                        <h4>In evidenza</h4>
+                        <div class="category--active"></div>
+                    </li>
+                    <li>
+                        <h4>Podcast</h4>
+                    </li>
+                    <li>
+                        <h4>Classifiche</h4>
+                    </li>
+                    <li>
+                        <h4>Generi e Mood</h4>
+                    </li>
+                    <li>
+                        <h4>Nuove uscite</h4>
+                    </li>
+                    <li>
+                        <h4>Scopri</h4>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Recently Played -->
+            <section id="recent">
+
+                <!-- Titolo Sezione -->
+                <h1>Recently Played</h1>
+
+                <!-- Card Container -->
+                <div class="card-container">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/metal_lifting.jpg" alt="metal lifting">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Heavy Metal</h2>
+                            <h3>Subtitle</h3>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/stranger.jpeg" alt="stranger things cover">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
+                            <h3>Kyle Dixon & Michael Stein</h3>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/aquietplace.jpeg" alt="a quiet place">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>A quiet place</h2>
+                            <h3>Subtitle</h3>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/split.jpeg" alt="split cover">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Split</h2>
+                            <h3>Subtitle</h3>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/cure.jpeg" alt="A cure for wellness">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>A cue for wellness</h2>
+                            <h3>Subtitle</h3>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/sinister.jpeg" alt="sinister">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Sinister</h2>
+                            <h3>Subtitle</h3>
+                        </div>
+
+
+                    </div>
+
+            </section>
+
+            <!-- For you -->
+            <section id="for-you">
+
+                <!-- Titolo Sezione -->
+                <h1>Creato per John Doe</h1>
+                <h3>Più ascolti, più accurati saranno i suggerimenti.</h3>
+
+                <!-- Card Container -->
+                <div class="card-container">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/radar.jpeg" alt="release radar">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Release Radar</h2>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image">
+                            <img src="img/mixdaily.jpeg" alt="daily mix">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Daily Mix 1</h2>
+                        </div>
+
+
+                    </div>
+
+            </section>
+
+            <!-- Artisti più popolari -->
+            <section id="for-you">
+
+                <!-- Titolo Sezione -->
+                <h1>Artisti più popolari</h1>
+                <h3>Più ascolti, più accurati saranno i suggerimenti.</h3>
+
+                <!-- Card Container -->
+                <div class="card-container">
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image card__image--artist">
+                            <img src="img/youg.jpeg" alt="lana del rey">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Lana Del Rey</h2>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Card -->
+                    <div class="card">
+
+                        <!-- Cover -->
+                        <div class="card__image card__image--artist">
+                            <img src="img/einaudi.jpeg" alt="einaudi">
+                            <div class="cover--layover">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card__info">
+                            <h2>Giulio Einaudi</h2>
+                        </div>
+
+
+                    </div>
+
+            </section>
+
+        </main>
     </div>
-
-    <!-- Main -->
-    <main>
-        <div class="upgrade">
-            Testo
-
-        </div>
-
-    </main>
 
     <!-- Player -->
     <div class="player">
@@ -188,8 +448,6 @@
         </div>
 
     </div>
-
-
 
 </body>
 
